@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Project1</string>
+
+    <string-array name="option_types">
+        <item>Hex To Decimal</item>
+        <item>Decimal To Unsigned Hex</item>
+        <item>Decimal To Signed Hex</item>
+    </string-array>
+
+    <string-array name="bits">
+        <item>8 bits</item>
+    </string-array>
+
+    <string-array name="vals">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+    </string-array>
+
+</resources>

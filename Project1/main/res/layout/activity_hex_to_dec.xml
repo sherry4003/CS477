@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.gmu.sherrydang.project1.HexToDec">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/hexrandvals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What are the signed and unsigned value for the 8-bits hex value 0x"
+            android:textSize="25dp"
+            android:layout_toRightOf="@+id/questions"
+            android:layout_toEndOf="@+id/questions"/>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/signed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/signedInput"
+            android:text="Signed: "
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/signedInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/signed"
+            android:hint="Decimal value"
+            android:inputType="number"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/unsigned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/unSignedInput"
+            android:layout_below="@+id/signed"
+            android:text="Unsigned: "
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/unSignedInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signed"
+            android:layout_toRightOf="@+id/unsigned"
+            android:hint="Decimal value"
+            android:inputType="number"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/result"
+        android:text="CHECK MY ANSWERS"
+        android:onClick="checkClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/nextbtn"
+        android:text="Next"
+        android:visibility="gone"
+        android:onClick="nextbuttonCliked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/correctSignedResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/correctUnSignedResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/scoretxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: "
+            android:textSize="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/score_computed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25dp"
+            android:layout_toRightOf="@+id/scoretxt"/>
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="25dp"
+            android:layout_toRightOf="@+id/score_computed"/>
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25dp"
+            android:layout_toRightOf="@+id/txt"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
