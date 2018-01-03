@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.sherrydang.baseconverter.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/inputval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter a number"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="100dp" />
+
+        <Button
+            android:id="@+id/clearbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLEAR"
+            tools:layout_editor_absoluteX="200dp"
+            tools:layout_editor_absoluteY="100dp" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_bi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Binary"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="172dp" />
+
+        <RadioButton
+            android:id="@+id/radio_oct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Octal"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="230dp" />
+
+        <RadioButton
+            android:id="@+id/radio_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Decimal"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="281dp" />
+
+        <RadioButton
+            android:id="@+id/radio_hex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Hex"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="336dp" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/convertbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONVERT" />
+
+    <TextView
+        android:id="@+id/bitext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Binary" />
+
+    <TextView
+        android:id="@+id/octtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Octal" />
+
+    <TextView
+        android:id="@+id/dectext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decimal" />
+
+    <TextView
+        android:id="@+id/hextext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hex" />
+
+    <TextView
+        android:id="@+id/authorname"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end"
+        android:text="Binh Dang" />
+
+</LinearLayout>
