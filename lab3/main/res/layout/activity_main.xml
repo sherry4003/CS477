@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.gmu.sherrydang.todolist.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ListView
+            android:id="@+id/mylist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+             />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_toRightOf="@id/add"
+            android:layout_below="@+id/delete"
+            android:hint="New Task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="Add Item"
+            android:layout_below="@id/delete"
+            android:layout_width="wrap_content"
+            android:onClick="addElem"
+            android:layout_height="wrap_content"
+            android:id="@+id/add"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Delete Done"
+            android:onClick="deleteDone"
+            android:layout_below="@id/mylist"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete"/>
+
+        <TextView
+            android:id="@+id/authorname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:text="Binh Dang" />
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
